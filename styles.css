@@ -263,6 +263,21 @@ html {
     z-index: 1050;
 }
 
+
+@media (max-width: 991px) {
+    .navbar {
+        width: 100%;
+    }
+    .navbar .container {
+        padding-left: 0;
+        padding-right: 0;
+        max-width: 100%;
+    }
+}
+
+
+
+
 /* Navbar border adjustments for different sections */
 .navbar.on-other-sections {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
