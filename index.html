@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prathamesh Kailash Bembre - Portfolio</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress">
+        <div class="scroll-progress-bar"></div>
+    </div>
+    
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <span class="brand-text">Portfolio</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="theme-toggle" id="themeToggle">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-background">
+            <canvas id="particlesCanvas"></canvas>
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+                <div class="shape shape-5"></div>
+                <div class="shape shape-6"></div>
+            </div>
+            <div class="gradient-overlay"></div>
+            <div class="geometric-pattern"></div>
+        </div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="hero-badge" data-aos="fade-up" data-aos-delay="200">
+                            <span class="badge-text">Available for Work</span>
+                            <div class="badge-dot"></div>
+                        </div>
+                        <h1 class="hero-title" data-aos="fade-up" data-aos-delay="300">
+                            Hi, I'm <span class="highlight typing-text">Prathamesh Bembre</span>
+                        </h1>
+                        <h2 class="hero-subtitle" data-aos="fade-up" data-aos-delay="400">
+                            <span class="subtitle-text">Full Stack Developer</span>
+                            <span class="cursor-blink">|</span>
+                        </h2>
+                        <p class="hero-description" data-aos="fade-up" data-aos-delay="500">
+                            Passionate about creating innovative web solutions and bringing ideas to life through code.
+                        </p>
+                        <div class="hero-buttons" data-aos="fade-up" data-aos-delay="600">
+                            <a href="#projects" class="btn btn-primary btn-lg me-3 btn-glow">
+                                <span>View My Work</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="#contact" class="btn btn-outline-light btn-lg btn-hover">
+                                <span>Get In Touch</span>
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                        <div class="social-links" data-aos="fade-up" data-aos-delay="700">
+                            <a href="https://www.github.com/Bembre" class="social-link" data-tooltip="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/bembre" class="social-link" data-tooltip="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://wa.me/9022654357" target="_blank" class="social-link" data-tooltip="Instagram">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a href="https://www.instagram.com/prathameshbembre/" target="_blank" class="social-link" data-tooltip="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                        <div class="image-container">
+                            <div class="profile-image">
+                                <div class="profile-overlay">
+                                    <img src="/documents/images/Photo.png" alt="Prathamesh Bembre">
+                                </div>
+                                <div class="profile-glow"></div>
+                            </div>
+                            <div class="image-decoration decoration-1"></div>
+                            <div class="image-decoration decoration-2"></div>
+                            <div class="image-decoration decoration-3"></div>
+                            <div class="floating-icons">
+                                <div class="floating-icon" data-aos="zoom-in" data-aos-delay="800">
+                                    <i class="fab fa-python"></i>
+                                </div>
+                                <div class="floating-icon" data-aos="zoom-in" data-aos-delay="1100">
+                                    <i class="fab fa-php"></i>
+                                </div>
+                                <div class="floating-icon" data-aos="zoom-in" data-aos-delay="1000">
+                                    <i class="fab fa-js-square"></i>
+                                </div>
+                                <div class="floating-icon" data-aos="zoom-in" data-aos-delay="800">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about-image" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="resume-preview-wrapper">
+                            <div class="resume-preview-container-3d">
+                                <a href="/documents/Resume.pdf" target="_blank" class="resume-preview-link">
+                                    <div class="resume-preview-card">
+                                        <canvas id="pdf-preview" class="resume-preview-canvas"></canvas>
+                                    </div>
+                                </a>
+                                <a href="/documents/Resume.pdf" download class="resume-download-btn">
+                                    <i class="fas fa-download"></i>
+                                    <span>Download Resume</span>
+                                </a>
+                            </div>
+                            <div class="resume-glow"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content" data-aos="fade-left" data-aos-duration="1000">
+                        <div class="section-header">
+                            <h2 class="section-title">About Me</h2>
+                        </div>
+                        <p class="about-text" data-aos="fade-up" data-aos-delay="200">
+                            <strong>Full Stack Developer</strong> specializing in <strong>Python</strong>, <strong>Django</strong>, <strong>REST API engineering</strong>, and <strong>modern frontend development</strong>.
+Experienced in building secure, and high performance applications with <strong>Django</strong>, <strong>MySQL</strong>, <strong>JavaScript</strong>, <strong>HTML</strong>, <strong>CSS</strong>, and
+<strong>Bootstrap</strong>.
+                        </p>
+                        <p class="about-text" data-aos="fade-up" data-aos-delay="300">
+                            Strong in <strong>backend architecture</strong>, <strong>API integration</strong>, <strong>database design</strong>, and <strong>responsive user interface</strong>
+development. Proficient in <strong>Git/GitHub</strong> workflows, cloud deployment on <strong>Render/Netlify</strong>, and debugging across the full
+stack. Eager to contribute to engineering teams by delivering clean, maintainable, and production ready code.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <div class="section-header" data-aos="fade-up" data-aos-duration="1000">
+                        <h2 class="section-title">Skills & Technologies</h2>
+                        <p class="section-subtitle">Technologies I work with</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-2 col-md-3 col-4 col-sm-4 mb-4">
+                    <div class="skill-card-circle" data-aos="zoom-in" data-aos-delay="100">
+                        <i class="fab fa-python skill-icon"></i>
+                        <span class="skill-name">Python</span>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-4 col-sm-4 mb-4">
+                    <div class="skill-card-circle" data-aos="zoom-in" data-aos-delay="150">
+                        <i class="fab fa-js-square skill-icon"></i>
+                        <span class="skill-name">JavaScript</span>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-4 col-sm-4 mb-4">
+                    <div class="skill-card-circle" data-aos="zoom-in" data-aos-delay="200">
+                        <i class="fab fa-php skill-icon"></i>
+                        <span class="skill-name">PHP</span>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-4 col-sm-4 mb-4">
+                    <div class="skill-card-circle" data-aos="zoom-in" data-aos-delay="250">
+                        <i class="fab fa-python skill-icon"></i>
+                        <span class="skill-name">Django</span>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-4 col-sm-4 mb-4">
+                    <div class="skill-card-circle" data-aos="zoom-in" data-aos-delay="300">
+                        <i class="fab fa-html5 skill-icon"></i>
+                        <span class="skill-name">HTML5</span>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-4 col-sm-4 mb-4">
+                    <div class="skill-card-circle" data-aos="zoom-in" data-aos-delay="350">
+                        <i class="fab fa-css3-alt skill-icon"></i>
+                        <span class="skill-name">CSS3</span>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-4 col-sm-4 mb-4">
+                    <div class="skill-card-circle" data-aos="zoom-in" data-aos-delay="400">
+                        <i class="fab fa-bootstrap skill-icon"></i>
+                        <span class="skill-name">Bootstrap</span>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-4 col-sm-4 mb-4">
+                    <div class="skill-card-circle" data-aos="zoom-in" data-aos-delay="450">
+                        <i class="fas fa-database skill-icon"></i>
+                        <span class="skill-name">MySQL</span>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-4 col-sm-4 mb-4">
+                    <div class="skill-card-circle" data-aos="zoom-in" data-aos-delay="500">
+                        <i class="fab fa-git-alt skill-icon"></i>
+                        <span class="skill-name">Git</span>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-4 col-sm-4 mb-4">
+                    <div class="skill-card-circle" data-aos="zoom-in" data-aos-delay="550">
+                        <i class="fab fa-github skill-icon"></i>
+                        <span class="skill-name">GitHub</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">Some of my recent work</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/Bembre/Alumni" class="project-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                            <div class="project-placeholder">
+                                <img src="/documents/images/Alumni.png">
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>Alumni Association Platform</h4>
+                            <p><ul>
+  <li>Developed a full-stack alumni networking platform using Django, JavaScript, HTML, CSS, and Bootstrap with secure authentication, session management, and role-based access control.</li>
+  <li>Implemented real-time messaging, user profiles, and a job posting module to enhance platform interactivity and engagement.</li>
+</ul></p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Django</span>
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    
+                                    <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                            <div class="project-placeholder">
+                                <img src="/documents/images/Chat_App.png">
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>Chat Application</h4>
+                            <p><ul>
+  <li>Developed a real-time chat application using Django, HTML, CSS, JavaScript, and Bootstrap, featuring user authentication, dynamic contact lists, and responsive design.</li>
+  <li>Implemented interactive messaging with visually distinct chat bubbles, message sorting, and seamless UI/UX for an engaging communication experience.</li>
+</ul>
+</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Django</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                            <div class="project-placeholder">
+                                <img src="/documents/images/Portfolio.png">
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>PortFolio</h4>
+                            <p><ul>
+  <li>Designed and developed a responsive portfolio website using HTML, CSS, Bootstrap, and JavaScript, showcasing projects and skills.</li>
+  <li>Implemented interactive UI elements, smooth navigation, and visually appealing layouts to enhance user experience across devices.</li>
+</ul>
+</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/Bembre/Car-Pooling" class="project-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                            <div class="project-placeholder">
+                                <img src="/documents/images/Car_Pooiling.png">
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>Campus Ride Pooling Platform</h4>
+                            <p>
+                                <ul>
+                                <li>Developed a ride sharing platform enabling users to offer and browse campus rides.</li> 
+<li>Integrated secure login, admin panel, and one to one chat using AJAX.</li>
+</ul>
+                            <div class="project-tech">
+                                <span class="tech-tag">PHP</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/Bembre/MoviesHUB" class="project-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                            <div class="project-placeholder">
+                                <img src="/documents/images/MoviesHub.png">
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>MoviesHub</h4>
+                            <p>MoviesHub brings the world of cinema right to your fingertips.<br>
+It allows you to:<br>
+
+<ul>
+    <li>🎥 Watch trailers of the latest and trending movies</li>
+<li>⭐ Add movies to your personal wishlist</li>
+<li>🔍 Search and explore movies by genres</li>
+<li>💎 Upgrade to a paid plan for explore and enjoy the world of cinema</li>
+</ul>
+                            <div class="project-tech">
+                                <span class="tech-tag">PHP</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    
+                                    <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                            <div class="project-placeholder">
+                                <img src="/documents/images/SQL.png">
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>Satellite & Space Mission Data Analysis </h4>
+                            <p><ul>
+                                <li>Designed relational schema for processing aerospace telemetry and mission data. </li>
+<li>Executed complex SQL queries for aggregation, performance tracking, and analytics.</li>
+                            </ul></p>
+                            <div class="project-tech">
+                                <span class="tech-tag">SQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <div class="section-header" data-aos="fade-up" data-aos-duration="1000">
+                        <h2 class="section-title">Get In Touch</h2>
+                        <p class="section-subtitle">Let's work together on your next project</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contact Information Frame -->
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="contact-frame" data-aos="fade-up" data-aos-delay="200">
+                        <div class="row">
+                            <!-- Contact Form -->
+                            <div class="col-lg-6">
+                                <div class="contact-form-section">
+                                    <h4 class="contact-form-title">Send me a message</h4>
+                                    <form id="contactForm" class="contact-form">
+                                        <div class="form-group mb-3">
+                                            <input type="text" class="form-control contact-input" name="name" placeholder="Your Name" required>
+                                        </div>
+                                        <div class="form-group mb-3">
+                                            <input type="email" class="form-control contact-input" name="email" placeholder="Your Email" required>
+                                        </div>
+                                        <div class="form-group mb-3">
+                                            <input type="text" class="form-control contact-input" name="subject" placeholder="Subject" required>
+                                        </div>
+                                        <div class="form-group mb-4">
+                                            <textarea class="form-control contact-input" rows="4" name="message" placeholder="Your Message" required></textarea>
+                                        </div>
+                                        <div class="text-center">
+                                            <button type="submit" class="btn btn-primary btn-lg contact-btn">
+                                                <i class="fas fa-paper-plane me-2"></i>Send Message
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            
+                            <!-- Contact Details -->
+                            <div class="col-lg-6">
+                                <div class="contact-details-section">
+                                    <h4 class="contact-details-title">Contact Information</h4>
+                                    
+                                    <!-- Phone Number (Prominent) -->
+                                    <div class="contact-item phone-item">
+                                        <div class="contact-icon">
+                                            <i class="fas fa-phone"></i>
+                                        </div>
+                                        <div class="contact-content">
+                                            <h5>Phone Number</h5>
+                                            <p class="contact-value">+91 90226 54357</p>
+                                            <small class="contact-note">Available 9 AM - 6 PM IST</small>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Email -->
+                                    <div class="contact-item">
+                                        <div class="contact-icon">
+                                            <i class="fas fa-envelope"></i>
+                                        </div>
+                                        <div class="contact-content">
+                                            <h5>Email Address</h5>
+                                            <p class="contact-value">prathameshbembre01@gmail.com</p>
+                                            <small class="contact-note">I'll respond within 24 hours</small>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Location -->
+                                    <div class="contact-item">
+                                        <div class="contact-icon">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                        </div>
+                                        <div class="contact-content">
+                                            <h5>Location</h5>
+                                            <p class="contact-value">Pune, Maharashtra</p>
+                                            <small class="contact-note">Available for all opportunities worldwide</small>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Social Links -->
+                                    <div class="contact-social">
+                                        <h6>Follow me on</h6>
+                                        <div class="social-links">
+                                            <a href="https://www.linkedin.com/in/bembre" class="social-link-follow" data-tooltip="LinkedIn">
+                                                <i class="fab fa-linkedin"></i>
+                                            </a>
+                                            <a href="https://www.ub: github.com/Bembre" class="social-link-follow" data-tooltip="GitHub">
+                                                <i class="fab fa-github"></i>
+                                            </a>
+                                            <a href="https://wa.me/9022654357" class="social-link-follow" data-tooltip="Twitter">
+                                                <i class="fab fa-whatsapp"></i>
+                                            </a>
+                                            <a href="https://www.instagram.com/prathameshbembre/" class="social-link-follow" data-tooltip="Instagram">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>&copy; 2025 Prathamesh Kailash Bembre. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+
+   
+
+ <script>
+   const url = '/documents/Resume.pdf';
+
+   pdfjsLib.getDocument(url).promise.then(pdf => {
+     pdf.getPage(1).then(page => {
+       const canvas = document.getElementById('pdf-preview');
+       const context = canvas.getContext('2d');
+       
+       // Calculate optimal scale for smaller container (max 300px width, 400px height)
+       const maxWidth = 300;
+       const maxHeight = 400;
+       const viewport = page.getViewport({ scale: 1 });
+       
+       // Calculate scale to fit both width and height constraints
+       const widthScale = maxWidth / viewport.width;
+       const heightScale = maxHeight / viewport.height;
+       const scale = Math.min(widthScale, heightScale) * 2; // Higher resolution for quality
+       
+       const scaledViewport = page.getViewport({ scale: scale });
+
+       // Set canvas resolution
+       canvas.width = scaledViewport.width;
+       canvas.height = scaledViewport.height;
+
+       // Render PDF
+       page.render({
+         canvasContext: context,
+         viewport: scaledViewport
+       });
+
+       // Set display size to fit container - smaller size
+       canvas.style.width = "100%";
+       canvas.style.height = "auto";
+       canvas.style.maxWidth = "100%";
+       canvas.style.maxHeight = "100%";
+       canvas.style.cursor = "pointer";
+       canvas.style.display = "block";
+       canvas.style.objectFit = "contain";
+     }).catch(error => {
+       console.error('Error rendering PDF:', error);
+     });
+   }).catch(error => {
+     console.error('Error loading PDF:', error);
+   });
+ </script>
+ <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+(function () {
+  emailjs.init("UddszJgq673EEk9gX"); // ← paste here
+})();
+
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  emailjs.sendForm(
+    "service_79f4jqh",   // ← paste here
+    "template_iclxn0r",  // ← paste here
+    this
+  ).then(() => {
+    this.reset();
+  }, (error) => {
+    console.error(error);
+  });
+});
+</script>
+
+
+
+
+</body>
+</html>
