@@ -169,7 +169,6 @@ svg {
 html,
 body {
     overflow-x: hidden;
-    overflow-y: visible; /* FIX */
     width: 100%;
     position: relative;
 }
@@ -303,13 +302,12 @@ html {
         width: calc(100% - 30px);
         margin-left: 15px;
         margin-right: 15px;
-        z-index: 2000;
+        z-index: 1000;
         margin-top: 0.5rem;
         max-height: calc(100vh - 80px);
         overflow-y: auto;
         -webkit-overflow-scrolling: touch;
     }
-
     
     .navbar-collapse.collapsing {
         max-height: calc(100vh - 80px);
@@ -339,8 +337,7 @@ html {
     .navbar-collapse {
         max-width: 100vw;
         overflow-x: hidden;
-    overflow: visible !important;
-}
+    }
 }
 
 /* Navbar border adjustments for different sections */
@@ -496,7 +493,7 @@ html {
     display: flex;
     align-items: center;
     overflow: hidden;
-    z-index: 1;
+    z-index: 100;
     transform: none !important;
     opacity: 1 !important;
     animation: hero-gradient-shift 20s ease-in-out infinite;
@@ -2860,9 +2857,9 @@ section[id] {
         overflow-y: auto;
         position: absolute;
         top: 100%;
-        left: 36rem;
-        /* right: 15px; */
-        width: 20%;
+        left: 15px;
+        right: 15px;
+        width: calc(100% - 30px);
         z-index: 1000;
     }
     
