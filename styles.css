@@ -169,6 +169,7 @@ svg {
 html,
 body {
     overflow-x: hidden;
+    overflow-y: visible;
     width: 100%;
     position: relative;
 }
@@ -294,7 +295,7 @@ html {
         width: 100%;
     }
     
-    .navbar-collapse {
+    /* .navbar-collapse {
         position: absolute;
         top: 100%;
         left: 0;
@@ -307,7 +308,7 @@ html {
         max-height: calc(100vh - 80px);
         overflow-y: auto;
         -webkit-overflow-scrolling: touch;
-    }
+    } */
     
     .navbar-collapse.collapsing {
         max-height: calc(100vh - 80px);
@@ -2846,7 +2847,7 @@ section[id] {
         height: 1.2em;
     }
     
-    .navbar-collapse {
+    /* .navbar-collapse {
         background: rgba(0, 0, 0, 0.95);
         backdrop-filter: blur(20px);
         margin-top: 0.5rem;
@@ -2861,7 +2862,7 @@ section[id] {
         right: 15px;
         width: calc(100% - 30px);
         z-index: 1000;
-    }
+    } */
     
     .navbar-collapse.show {
         max-height: calc(100vh - 100px);
